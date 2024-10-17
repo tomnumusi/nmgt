@@ -189,3 +189,26 @@ h1 {
     font-weight: 300;
     margin-top: 0;
 }
+
+#imprint {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.imprint-details p {
+    margin-bottom: 10px;
+}
+
+.imprint-details a {
+    color: #0b6623;
+    /* Dark green for link consistency */
+    text-decoration: none;
+}
+
+.imprint-details a:hover {
+    text-decoration: underline;
+}
