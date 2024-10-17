@@ -236,3 +236,45 @@ header {
     /* Red color for hover to match the logo's border */
     text-decoration: none;
 }
+
+header {
+    background-color: #0b6623;
+    /* Consistent dark green for branding */
+    padding: 2rem 0;
+    font-family: 'Poppins', sans-serif;
+    /* Apply the new font to the header */
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    /* Apply a bold weight to the title for emphasis */
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    /* Use a regular weight for the subtitle */
+    margin-top: 0;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 600;
+    /* Match the boldness of the header */
+    padding: 0.5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    /* Apply the new font to the navigation link */
+}
+
+.nav-link:hover {
+    color: #dc3545;
+    /* Red color for hover to match the logo's border */
+    text-decoration: none;
+}
