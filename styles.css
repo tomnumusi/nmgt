@@ -212,3 +212,27 @@ h1 {
 .imprint-details a:hover {
     text-decoration: underline;
 }
+
+header {
+    background-color: #0b6623;
+    /* Consistent dark green for branding */
+    padding: 2rem 0;
+}
+
+.header-logo {
+    width: 100px;
+    /* Adjusted size */
+    height: auto;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: #dc3545;
+    /* Red color for hover to match the logo's border */
+    text-decoration: none;
+}

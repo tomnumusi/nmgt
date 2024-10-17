@@ -12,16 +12,24 @@
 
 <body>
     <header class="bg-success text-white py-4">
-        <div class="container d-flex align-items-center">
-            <img src="https://i.discogs.com/xdZ2ejoF5Wflu-FdosI4QWs_CZCHy0l1AaNcX_BR-8g/rs:fit/g:sm/q:90/h:225/w:198/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTgxMjI1/NC0xNTE4NDM0NjA0/LTQ1NzEucG5n.jpeg"
-                alt="Green Tree Logo" class="header-logo me-3">
-            <div class="text-center w-100">
-                <h1 class="mb-1">New Music - Green Tree</h1>
-                <p class="lead">CD & LP Reissues</p>
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <img src="https://i.discogs.com/xdZ2ejoF5Wflu-FdosI4QWs_CZCHy0l1AaNcX_BR-8g/rs:fit/g:sm/q:90/h:225/w:198/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTgxMjI1/NC0xNTE4NDM0NjA0/LTQ1NzEucG5n.jpeg"
+                    alt="Green Tree Logo" class="header-logo me-3">
+                <div class="text-start">
+                    <h1 class="mb-1">New Music - Green Tree</h1>
+                    <p class="lead">CD & LP Reissues</p>
+                </div>
             </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#imprint">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-
 
     <section id="releases" class="container my-4">
         <h2 class="text-center mb-4">Our Releases</h2>
@@ -690,7 +698,6 @@
         </div>
     </section>
 
-
     <footer class="bg-success text-white text-center py-3 mt-4">
         <p>&copy; 2024 New Music - Green Tree</p>
     </footer>
@@ -698,6 +705,16 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
     function sortTable(columnIndex) {
         const table = document.getElementById("albumsTable");
         let switching = true;
