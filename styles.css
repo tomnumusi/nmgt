@@ -1,0 +1,191 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+#releases,
+#contact {
+    padding: 2rem;
+}
+
+.release-item {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.release-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 0.7rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+#releases {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#albumsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#albumsTable th,
+#albumsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#albumsTable th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+#albumsTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#albumsTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+#contact {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#contact-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4caf50;
+    color: white;
+    margin-top: 20px;
+}
+
+#albumsTable img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    /* optional, gives rounded corners */
+}
+
+header {
+    background-image: linear-gradient(to right, #4caf50, #388e3c);
+    color: white;
+    padding: 2rem 0;
+}
+
+.header-logo {
+    width: 80px;
+    /* Adjust the size to fit your layout */
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 0;
+}

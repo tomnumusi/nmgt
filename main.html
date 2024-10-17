@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Music - Green Tree</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <header class="bg-success text-white py-4">
+        <div class="container d-flex align-items-center">
+            <img src="https://i.discogs.com/xdZ2ejoF5Wflu-FdosI4QWs_CZCHy0l1AaNcX_BR-8g/rs:fit/g:sm/q:90/h:225/w:198/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9MLTgxMjI1/NC0xNTE4NDM0NjA0/LTQ1NzEucG5n.jpeg"
+                alt="Green Tree Logo" class="header-logo me-3">
+            <div class="text-center w-100">
+                <h1 class="mb-1">New Music - Green Tree</h1>
+                <p class="lead">CD & LP Reissues</p>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="releases" class="container my-4">
+        <h2 class="text-center mb-4">Our Releases</h2>
+        <div class="table-responsive">
+            <table id="albumsTable" class="table table-striped table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>Image</th>
+                        <th onclick="sortTable(1)">Title</th>
+                        <th onclick="sortTable(2)">Year</th>
+                        <th onclick="sortTable(3)">Catno</th>
+                        <th onclick="sortTable(4)">Format</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://i.discogs.com/wgI4WdwWnB4FssmY99UA5Q8K4Mx59Drnpt_EAW4bE4g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MTQ5/MDAtMTQyNzE5OTg4/My01MzIxLmpwZWc.jpeg"
+                                alt="Silver Laughter - Handle With Care"></td>
+                        <td>Silver Laughter - Handle With Care</td>
+                        <td>2015</td>
+                        <td>GTR 149</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/wgI4WdwWnB4FssmY99UA5Q8K4Mx59Drnpt_EAW4bE4g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MTQ5/MDAtMTQyNzE5OTg4/My01MzIxLmpwZWc.jpeg"
+                                alt="Silver Laughter - Handle With Care"></td>
+                        <td>Silver Laughter - Handle With Care</td>
+                        <td>2015</td>
+                        <td>GTR 149</td>
+                        <td>CD</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://i.discogs.com/i5nFQm-fzBLZpNgCzmVjUavTUsK5BK1bPBm1tdqMaWs/rs:fit/g:sm/q:90/h:503/w:503/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MzY0/NTctMTM3NTEzNjY2/My0xNDU1LmpwZWc.jpeg"
+                                alt="Heaven - Brass Rock 1"></td>
+                        <td>Heaven - Brass Rock 1</td>
+                        <td>2005</td>
+                        <td>GTR 625</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/UlrMu4-odbW7sb8nDs4Dlput1RSsuWSMx-23zGDjxHc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NzQz/OTItMTM3MTQ3ODM5/NC03MjA5LmpwZWc.jpeg"
+                                alt="Baltik-Baltik"></td>
+                        <td>Baltik-Baltik</td>
+                        <td>2004</td>
+                        <td>GTR 622</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/OGqUzk2OaJ91mOKI3U7MVlwP2cNEBBiax__cIhWsXyw/rs:fit/g:sm/q:90/h:608/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwODEx/NjExLTE3MTY5ODIw/MDQtNDUwNy5qcGVn.jpeg"
+                                alt="Solar Project - Picture At An Exhibition"></td>
+                        <td>Solar Project - Picture At An Exhibition</td>
+                        <td>2024</td>
+                        <td>GTR 187</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/J70I0_e8aYVlU5ZYPVFHBi7zorjQMYZ5iGPPVAWgN-A/rs:fit/g:sm/q:90/h:611/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDAy/ODEwLTE2NzA0OTIx/MjUtNTE0Ni5qcGVn.jpeg"
+                                alt="Abacus - Plays Abacus"></td>
+                        <td>Abacus - Plays Abacus</td>
+                        <td>2022</td>
+                        <td>GTR 186</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/x8o4wU4JBhVS5cOXFu23fz8v75eu6lLN3_UTpe1qfFU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MTkx/ODE3LTE2Njg2ODUy/MDEtNzUyMy5qcGVn.jpeg"
+                                alt="Solar Project - Restless"></td>
+                        <td>Solar Project - Restless</td>
+                        <td>2022</td>
+                        <td>GTR 185</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/ZPklZAhMOeH1jF7MSE8GHzoANSa18TqZ_fgQ1SHRM_w/rs:fit/g:sm/q:90/h:528/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NDQw/MDk5LTE2NjI1NDU5/NjgtMTQ4NS5wbmc.jpeg"
+                                alt="England - The Concerts In Japan"></td>
+                        <td>England - The Concerts In Japan</td>
+                        <td>2022</td>
+                        <td>GTR 184-2</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/RdELqDWeykeowMKwK4uV8yk9GXrtwJTrfDNpaHcTU6k/rs:fit/g:sm/q:90/h:604/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MDIx/NzEzLTE2NzU3NzU0/ODYtMzE4Mi5qcGVn.jpeg"
+                                alt="England - The Concerts In Japan"></td>
+                        <td>England - The Concerts In Japan</td>
+                        <td>2023</td>
+                        <td>GTR 184-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/aS0Dc1FDc6GUAbmT-9siI14ozpoylTtUX5cqT1YdOn8/rs:fit/g:sm/q:90/h:531/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTEx/NzIxLTE2MjkzMzM5/MTMtMjU4My5qcGVn.jpeg"
+                                alt="Toad - State Of Grace"></td>
+                        <td>Toad - State Of Grace</td>
+                        <td>2021</td>
+                        <td>GTR 183</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/WAl2vHRW8NbijhsThsLo4aHDWzMyB-E4tDT_o-putvU/rs:fit/g:sm/q:90/h:504/w:563/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzMz/NjE1LTE1MDMzMDg0/OTYtMzcwMC5wbmc.jpeg"
+                                alt="Toad - Tomorrow Blue"></td>
+                        <td>Toad - Tomorrow Blue</td>
+                        <td>2017</td>
+                        <td>GTR 162</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/CjHMfbwBX0uaAhcpbyQhtUuEcR6bxT-ZcQadEnqu9QE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTEx/OTg4LTE2NDE2Njg5/NjUtMjc4My5qcGVn.jpeg"
+                                alt="Toad - Stop This Crime"></td>
+                        <td>Toad - Stop This Crime</td>
+                        <td>2021</td>
+                        <td>GTR 182</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/K4JxYqF1LJavyLvtZhk3AH7eHV5q-wH2H27Co8iUYOY/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTk4/ODM1LTE2MDE2MzUz/MzgtNjQxOC5qcGVn.jpeg"
+                                alt="Solar Project - Ghost Lights"></td>
+                        <td>Solar Project - Ghost Lights</td>
+                        <td>2020</td>
+                        <td>GTR 181</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/GPgJ6djDD6_dN7Ptp6L1TWwSy4AeVydwHcA1yEamTHg/rs:fit/g:sm/q:90/h:540/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTk4/Njc5LTE2MDE2MzQx/MTYtMTMxOC5qcGVn.jpeg"
+                                alt="Light Year - Hypernauts Of The Absolute Elsewhere"></td>
+                        <td>Light Year - Hypernauts Of The Absolute Elsewhere</td>
+                        <td>2020</td>
+                        <td>GTR 180</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/9oIn_8y90LyFLokjWo_3AH8pLvcOtKyI6GYbbL3-4i4/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzU0/NzU3LTE1NDEzMjk0/MDQtODU2OC5wbmc.jpeg"
+                                alt="Abacus - Archives 3 (News From The 70's)"></td>
+                        <td>Abacus - Archives 3 (News From The 70's)</td>
+                        <td>2018</td>
+                        <td>GTR 178</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/NcCsqtTQfja8lC1kxsZjGzYz3qlCKSwmEAqfsCFTHNA/rs:fit/g:sm/q:90/h:497/w:505/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzU0/NzI0LTE1NDEzMjg4/OTAtNzM1Mi5wbmc.jpeg"
+                                alt="Carlsberg-No Credit Cards"></td>
+                        <td>Carlsberg-No Credit Cards</td>
+                        <td>2018</td>
+                        <td>GTR 177</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/Yqt9FmoCGX0y7s4Smv8HQ6gRwXPN7qODcvou7nsuQWI/rs:fit/g:sm/q:90/h:538/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTI0/NDExLTE1Mjg3OTQ0/NjktNjMwOC5wbmc.jpeg"
+                                alt="Jenny Darren-Rare Bird In Rock"></td>
+                        <td>Jenny Darren-Rare Bird In Rock</td>
+                        <td>2018</td>
+                        <td>GTR 176</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/Xyr9ateJ4wMqlNg7mhagRhXU7zuc2yrtIlc_nIbaNjk/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDQx/MjM0LTE1MzUzNTQ5/MjgtOTIzNi5wbmc.jpeg"
+                                alt="England - Box Of Circles"></td>
+                        <td>England - Box Of Circles</td>
+                        <td>2018</td>
+                        <td>GTR 175-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/CuoLoWfI76IdSingwrdyj01ENrZVYsgXmJOeb_Gu9Lg/rs:fit/g:sm/q:90/h:501/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDQx/MjU0LTE1NTYxMjQ0/NTItNjgxMC5wbmc.jpeg"
+                                alt="England - Box Of Circles"></td>
+                        <td>England - Box Of Circles</td>
+                        <td>2018</td>
+                        <td>GTR 175</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/wvqrDVEWgSlCAXLSFF-5JTEwIewXrkzJIuakpNjzXOc/rs:fit/g:sm/q:90/h:451/w:511/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzQ4/MTE2LTE1MjE3MTA0/OTUtODk1OS5wbmc.jpeg"
+                                alt="Solar Project - Utopia"></td>
+                        <td>Solar Project - Utopia</td>
+                        <td>2018</td>
+                        <td>GTR 174-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/9h6mYp0JJlajkvZ6sEAeF88jAjr7K7oJX-iA_Q8e2LA/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzMy/OTU5LTE1MjY0MDYz/MTctMzU0OS5qcGVn.jpeg"
+                                alt="Solar Project - Utopia"></td>
+                        <td>Solar Project - Utopia</td>
+                        <td>2018</td>
+                        <td>GTR 174</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/pPd2qCQAQWVu4ky_sNY3YPUaxXPtKrXpVcO-uFJgCBI/rs:fit/g:sm/q:90/h:490/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzMz/MjAzLTE1NzY2MDIz/MjgtMTA4OS5qcGVn.jpeg"
+                                alt="Grasland - Echt Null !"></td>
+                        <td>Grasland - Echt Null !</td>
+                        <td>2018</td>
+                        <td>GTR 173</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/KDPZPFh1srlzb6Oo_g2w_usvn55_ViUWJAS_S-tj2vM/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzMz/MTY4LTE1MjE0NTk0/NzQtMzM0Mi5qcGVn.jpeg"
+                                alt="Neil Merryweather-Differences"></td>
+                        <td>Neil Merryweather-Differences</td>
+                        <td>2018</td>
+                        <td>GTR 172</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/yxnJ41lEmn6p8oppuBqVi1R1kIEKmczxAL9vH_AXcqg/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODE4/MTQ3LTE2MTEzMjEz/NjktNTAyMS5qcGVn.jpeg"
+                                alt="Neil Merryweather-Neil Merryweather, John Richardson And Boers"></td>
+                        <td>Neil Merryweather-Neil Merryweather, John Richardson And Boers</td>
+                        <td>2018</td>
+                        <td>GTR 171-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/g-NEsPiO7tZe0A3uQ9VmcClQPjC9bJhzgmpaOoOcNcM/rs:fit/g:sm/q:90/h:601/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzMz/MTI0LTE1NTU2NzIz/MzktNjMxNC5qcGVn.jpeg"
+                                alt="Neil Merryweather-Neil Merryweather, John Richardson And Boers"></td>
+                        <td>Neil Merryweather-Neil Merryweather, John Richardson And Boers</td>
+                        <td>2018</td>
+                        <td>GTR 171</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/iYsMQCsiJqUgvBPy5rr2KQLv1Fy1EshIp4h_nBzcKqQ/rs:fit/g:sm/q:90/h:599/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzU0/Njc1LTE2MjkzMTQ3/ODQtNzM0Ni5qcGVn.jpeg"
+                                alt="Time Of Commotion - Live From The 70's – Es Ist Nie Zu Spät"></td>
+                        <td>Time Of Commotion - Live From The 70's – Es Ist Nie Zu Spät</td>
+                        <td>2018</td>
+                        <td>GTR 179</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/iYsMQCsiJqUgvBPy5rr2KQLv1Fy1EshIp4h_nBzcKqQ/rs:fit/g:sm/q:90/h:599/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzU0/Njc1LTE2MjkzMTQ3/ODQtNzM0Ni5qcGVn.jpeg"
+                                alt="Time Of Commotion - Live From The 70's – Es Ist Nie Zu Spät"></td>
+                        <td>Time Of Commotion - Live From The 70's – Es Ist Nie Zu Spät</td>
+                        <td>2018</td>
+                        <td>GTR 179-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/jXJmY_899RLR0im88qhqVBEmp_zJpqdcszl-aMe7F-c/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODE4/MDk5LTE1MjI5MTE5/NDktMTkwNi5qcGVn.jpeg"
+                                alt="Czesław Niemen-On Stage 1970/1972"></td>
+                        <td>Czesław Niemen-On Stage 1970/1972</td>
+                        <td>2018</td>
+                        <td>GTR 170-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/jXJmY_899RLR0im88qhqVBEmp_zJpqdcszl-aMe7F-c/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODE4/MDk5LTE1MjI5MTE5/NDktMTkwNi5qcGVn.jpeg"
+                                alt="Czesław Niemen-On Stage 1970/1972"></td>
+                        <td>Czesław Niemen-On Stage 1970/1972</td>
+                        <td>2018</td>
+                        <td>GTR 170</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/IP6ZTWQPXqyF4HTNQvcUzRDu5T34CuRJbiEw2gfruWI/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODE4/MDY3LTE1MjI5MTEy/NDAtMTgyOC5qcGVn.jpeg"
+                                alt="Czesław Niemen-Live In Helsinki 1973"></td>
+                        <td>Czesław Niemen-Live In Helsinki 1973</td>
+                        <td>2018</td>
+                        <td>GTR 169-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/IP6ZTWQPXqyF4HTNQvcUzRDu5T34CuRJbiEw2gfruWI/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODE4/MDY3LTE1MjI5MTEy/NDAtMTgyOC5qcGVn.jpeg"
+                                alt="Czesław Niemen-Live In Helsinki 1973"></td>
+                        <td>Czesław Niemen-Live In Helsinki 1973</td>
+                        <td>2018</td>
+                        <td>GTR 169</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/8-B3PI0C9dWip9gom2XjdlZA7m-5kOdcUlA5rRlY3JY/rs:fit/g:sm/q:90/h:525/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDI5/MTM0LTE1MTYxNjg4/MDctOTY2OS5qcGVn.jpeg"
+                                alt="Nine Days' Wonder-Sonnet To Billy Frost"></td>
+                        <td>Nine Days' Wonder-Sonnet To Billy Frost</td>
+                        <td>2017</td>
+                        <td>GTR 168</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/o7e2LhxL2o7mkHkKWPa52KNvXMNoVT9GgQnNhX3XROo/rs:fit/g:sm/q:90/h:539/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDM0/MDY4LTE1MTYyNTcy/MzItMzk5OC5qcGVn.jpeg"
+                                alt="Nine Days' Wonder-We Never Lost Control"></td>
+                        <td>Nine Days' Wonder-We Never Lost Control</td>
+                        <td>2017</td>
+                        <td>GTR 167</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/sbKJ34FXb5xHXQoUNeIxbeNB4a_DV0CM5xvktVR1thw/rs:fit/g:sm/q:90/h:537/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzMz/NjYwLTE2MzU5MzQ0/NjgtNDM4OS5qcGVn.jpeg"
+                                alt="Toad - Open Fire – Live In Basel 1972"></td>
+                        <td>Toad - Open Fire – Live In Basel 1972</td>
+                        <td>2017</td>
+                        <td>GTR 166</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/drBZbl_eqVBUVX-SeJmKcpk7lBiglgz08jp8nsWrWtU/rs:fit/g:sm/q:90/h:546/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzMz/Njc5LTE1MDM2NTE5/MTAtNjQ4Ny5wbmc.jpeg"
+                                alt="Toad - Yearnin' Learnin' - Live 1978"></td>
+                        <td>Toad - Yearnin' Learnin' - Live 1978</td>
+                        <td>2017</td>
+                        <td>GTR 165</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/v8na65Blvep50wejRBFR6mzYbDSsuuNZrGRctwqd9X4/rs:fit/g:sm/q:90/h:504/w:561/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzMz/NjQzLTE1MDMzMDg4/ODYtODY2MS5wbmc.jpeg"
+                                alt="Toad - B.U.F.O. (Blues United Fighting Organization)"></td>
+                        <td>Toad - B.U.F.O. (Blues United Fighting Organization)</td>
+                        <td>2017</td>
+                        <td>GTR 164</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/PmSs0XrCRpgoer5xz02LV5d-dW8f_Kjfyncixa9VACE/rs:fit/g:sm/q:90/h:503/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzMz/NjI5LTE1MDMzMDg2/ODgtNTgxMC5wbmc.jpeg"
+                                alt="Toad - Dreams"></td>
+                        <td>Toad - Dreams</td>
+                        <td>2017</td>
+                        <td>GTR 163</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/X71JdDlB4z5ZSwBbyQeEEIlyPxtUl45_auwuJIT4cq8/rs:fit/g:sm/q:90/h:506/w:564/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzMz/NTg3LTE1MDMzMDgw/OTAtODA3NS5wbmc.jpeg"
+                                alt="Toad - Toad"></td>
+                        <td>Toad - Toad</td>
+                        <td>2017</td>
+                        <td>GTR 161</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+
+                        <td><img src="https://i.discogs.com/Iac5Gq7c1HryQFCLBMJYamxEJvxt1PE6EfRK7aL2lFk/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4OTEy/MDItMTMzODYzNzM5/Ny05NjU4LmpwZWc.jpeg"
+                                alt="Czesław Niemen-Ode To Venus"></td>
+                        <td>Czesław Niemen - Ode To Venus</td>
+                        <td>2003</td>
+                        <td>GTR 118</td>
+                        <td>CD</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://i.discogs.com/fQB0h-bBZcQbxIhegCmZ9-0Xf7BN1WFOmye3hj-oM10/rs:fit/g:sm/q:90/h:520/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNjU3/NTg3LTE2MjAzMjc2/MzctODUyMi5qcGVn.jpeg"
+                                alt="Haze - Hazecolor-Dia"></td>
+                        <td>Haze - Hazecolor-Dia</td>
+                        <td>2017</td>
+                        <td>GTR 160</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/a2XYE_1jUUCRcaSKujPzCK2F4sJucztOpPMFjzoCxuw/rs:fit/g:sm/q:90/h:299/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk2Nzk4/MTAtMTQ4NDY0OTg5/Mi0yMTQzLmpwZWc.jpeg"
+                                alt="England - The Last Of The Jubblies (Silver Edition)"></td>
+                        <td>England - The Last Of The Jubblies (Silver Edition)</td>
+                        <td>2017</td>
+                        <td>GTR 159</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/a2XYE_1jUUCRcaSKujPzCK2F4sJucztOpPMFjzoCxuw/rs:fit/g:sm/q:90/h:299/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk2Nzk4/MTAtMTQ4NDY0OTg5/Mi0yMTQzLmpwZWc.jpeg"
+                                alt="England - The Last Of The Jubblies (Silver Edition)"></td>
+                        <td>England - The Last Of The Jubblies (Silver Edition)</td>
+                        <td>2017</td>
+                        <td>GTR 159-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/BGbn6VpP-tkB8UVJ-segetBcger1IsNQp4PqIo1IsN0/rs:fit/g:sm/q:90/h:545/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5MjEy/MTgtMTQ3MTUxNDg0/NS04MzAzLmpwZWc.jpeg"
+                                alt="Solar Project - Paranoia"></td>
+                        <td>Solar Project - Paranoia</td>
+                        <td>2016</td>
+                        <td>GTR 158-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/FtRlEeXc-35RKeR16VRiDAMB8DgomuvNHZZ1QZN7s1k/rs:fit/g:sm/q:90/h:545/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5MjEx/NTMtMTQ3MTUxMzgy/MC03ODMzLmpwZWc.jpeg"
+                                alt="Solar Project - Paranoia"></td>
+                        <td>Solar Project - Paranoia</td>
+                        <td>2016</td>
+                        <td>GTR 158</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/Q0XTGoU1CCFbW2ETbeBnvCaTEFxE5uzA5NqfY8FYeEA/rs:fit/g:sm/q:90/h:503/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5MTc1/OTYtMTQ3MTQzNzQ5/OS0xOTA4LmpwZWc.jpeg"
+                                alt="Abacus - Archives 2 - News From The 70's"></td>
+                        <td>Abacus - Archives 2 - News From The 70's</td>
+                        <td>2016</td>
+                        <td>GTR 157</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/RypMszbbHEfuEE3nXHjFWXcIM6x3wd6smLdoZEHGkLc/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1NjU2/NzctMTQ2NDE2NTQ4/MS0zNzg2LnBuZw.jpeg"
+                                alt="Abacus - European Stories"></td>
+                        <td>Abacus - European Stories</td>
+                        <td>2016</td>
+                        <td>GTR 156-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/01XHsVM-QXCfoO_aRpoD0Jqin5hwxKlH8SZVY6gUH9A/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0MTQy/MDYtMTQ2MTE0MzQ5/NC05NzkzLnBuZw.jpeg"
+                                alt="Abacus - European Stories"></td>
+                        <td>Abacus - European Stories</td>
+                        <td>2016</td>
+                        <td>GTR 156</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/G4sPKEP63mxeWrwr6P3pDjZRWyhwgw-g0Zh8GU0jeII/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDAy/ODEwLTE2NzA0OTIx/MjUtNTE0Ni5qcGVn.jpeg"
+                                alt="Abacus - Abacus plays Abacus"></td>
+                        <td>Abacus - Abacus plays Abacus</td>
+                        <td>2022</td>
+                        <td>GTR 186</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/5ENWDFRJ19yc5a1mS7ZuDScg9ZPN5g2Kue-FxyTGiiE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwNTc2/NDctMTQ1NDMyNTEz/My03NDkyLmpwZWc.jpeg"
+                                alt="Czesław Niemen-Live In Opole 1971"></td>
+                        <td>Czesław Niemen-Live In Opole 1971</td>
+                        <td>2015</td>
+                        <td>GTR 155-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/gKBalaaPDpHWDTKDCzSV3rfdppdpzM-1aWb8GnBiZqk/rs:fit/g:sm/q:90/h:601/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NzYx/NTQtMTQ1MDcwMTIx/NS01OTI5LmpwZWc.jpeg"
+                                alt="Czesław Niemen-Live In Opole 1971"></td>
+                        <td>Czesław Niemen-Live In Opole 1971</td>
+                        <td>2015</td>
+                        <td>GTR 155</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/YazkFAmaUgXlBoFjpTLo3XnynkM2pwTr-w7x5kq0bqQ/rs:fit/g:sm/q:90/h:532/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1ODAz/MDMtMTQ0NDQ3ODI3/My00MTQxLmpwZWc.jpeg"
+                                alt="Solar Project - EMP & The Final Solution"></td>
+                        <td>Solar Project - EMP & The Final Solution</td>
+                        <td>2015</td>
+                        <td>GTR 154</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/ObbEbMzTLC_1-MZhSWyV4qi4_-JtnTPBImVsqHBpdms/rs:fit/g:sm/q:90/h:450/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2Nzc5/OTQtMTQ0NjU0MTg3/Mi01ODE2LnBuZw.jpeg"
+                                alt="England - Garden Shed (Golden Edition)"></td>
+                        <td>England - Garden Shed (Golden Edition)</td>
+                        <td>2015</td>
+                        <td>GTR 153</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/ObbEbMzTLC_1-MZhSWyV4qi4_-JtnTPBImVsqHBpdms/rs:fit/g:sm/q:90/h:450/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2Nzc5/OTQtMTQ0NjU0MTg3/Mi01ODE2LnBuZw.jpeg"
+                                alt="England - Garden Shed (Golden Edition)"></td>
+                        <td>England - Garden Shed (Golden Edition)</td>
+                        <td>2015</td>
+                        <td>GTR 153-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/KGkL5VxBvg5Cm-OdPZnXJQIBPzaBUhHm-dDsK5Xat3Q/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4NDcz/NDktMTQyNzg4NTAz/MS04NDkxLmpwZWc.jpeg"
+                                alt="Solar Project - Here I Am"></td>
+                        <td>Solar Project - Here I Am</td>
+                        <td>2015</td>
+                        <td>GTR 151-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/KGkL5VxBvg5Cm-OdPZnXJQIBPzaBUhHm-dDsK5Xat3Q/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4NDcz/NDktMTQyNzg4NTAz/MS04NDkxLmpwZWc.jpeg"
+                                alt="Solar Project - Here I Am"></td>
+                        <td>Solar Project - Here I Am</td>
+                        <td>2015</td>
+                        <td>GTR 151</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/jZ9pTgy7Fabpx8Zfs4UfQg7nTGhQzVz_X2JqlLhuBQM/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4NDcy/MDMtMTY4Nzk3NzA4/Ny01NDUwLmpwZWc.jpeg"
+                                alt="Silver Laughter-Sailing On Fantasies"></td>
+                        <td>Silver Laughter-Sailing On Fantasies</td>
+                        <td>2015</td>
+                        <td>GTR 150-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/VIERIYDNIdcte5oDBtaWXZhsGa2InYn3FiRcpjtCfpI/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MTQ4/NjUtMTQyNzE5OTM0/My0yMjk5LmpwZWc.jpeg"
+                                alt="Silver Laughter-Sailing On Fantasies"></td>
+                        <td>Silver Laughter-Sailing On Fantasies</td>
+                        <td>2015</td>
+                        <td>GTR 150</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/OKpx24gSyBldZTWHxr03WFh3aJ54_3BnprNEFkQtxDA/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwNjQ4/MDAtMTQzMjg5MjE1/NS00ODk0LmpwZWc.jpeg"
+                                alt="Silver Laughter - Handle With Care"></td>
+                        <td>Silver Laughter - Handle With Care</td>
+                        <td>2015</td>
+                        <td>GTR 149-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="https://i.discogs.com/4U-PW7uDbr4o1SMALd-yXqDth_ilQqxBv333vgW5wqk/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3MzAz/OTQtMTYyOTUyODIy/NS01NTA3LmpwZWc.jpeg"
+                                alt="Kaiambá-Made In Brazil"></td>
+                        <td>Kaiambá-Made In Brazil</td>
+                        <td>2014</td>
+                        <td>GTR 148-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/kdWNgK-dhROspCGZZ3aazlJ-8bSpSFMHGuaqhWzFdMs/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MTAy/MDYtMTUzOTYyMjMy/NS0zODE0LmpwZWc.jpeg"
+                                alt="Kaiambá-Made In Brazil"></td>
+                        <td>Kaiambá-Made In Brazil</td>
+                        <td>2014</td>
+                        <td>GTR 148</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/VrgmbRlDOyELrjc_YhdTZ-3fTSEXHoiZCJux_IzA0Ow/rs:fit/g:sm/q:90/h:600/w:581/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4Mjcy/NzctMTMwNjE5MzY4/Ny5qcGVn.jpeg"
+                                alt="Czesław Niemen – Strange Is This World"></td>
+                        <td>Czesław Niemen – Strange Is This World</td>
+                        <td>2003</td>
+                        <td>GTR 119</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/y6afBJungGnMzuOL6WdrI6mTP5Xc2rwczhoQljIPfEM/rs:fit/g:sm/q:90/h:550/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NDk3/NDgtMTQxOTUyNjgy/My0yMTY5LmpwZWc.jpeg"
+                                alt="Oda – Oda"></td>
+                        <td>Oda – Oda</td>
+                        <td>2009</td>
+                        <td>GTR 132</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/vkqzs9oppimLoP_c4RIoAzqCWjXlH42o9fWyx7sAOR8/rs:fit/g:sm/q:90/h:536/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxODMx/NTAtMTQxMzEzMDc1/OC0yMTc4LmpwZWc.jpeg"
+                                alt="Czesław Niemen-Strange Is This World"></td>
+                        <td>Czesław Niemen-Strange Is This World</td>
+                        <td>2014</td>
+                        <td>Gtr 146-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/boLzlqnziEGdI0pJaJcF1wOPdP_tOfT2DqIJmUoDOlw/rs:fit/g:sm/q:90/h:580/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0MTk1/MzEtMTQxOTMyMzU0/Ny03MjExLmpwZWc.jpeg"
+                                alt="Solar Project - Aquarmada"></td>
+                        <td>Solar Project - Aquarmada</td>
+                        <td>2014</td>
+                        <td>GTR 145</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/sIeuz2bEMUyaGpPFOJ_OPHadTwXH-199MF1CbQzwRDw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3Mjk1/MzgtMTY2Njk4Mjgz/Ni0xMzMwLmpwZWc.jpeg"
+                                alt="Abacus - Archives 1 - News From The 80ies"></td>
+                        <td>Abacus - Archives 1 - News From The 80ies</td>
+                        <td>2014</td>
+                        <td>GTR 144-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/2vBQVGd5lYcBpmh3P9wfJS7icrYLV6Oj0Jam1Gb2evw/rs:fit/g:sm/q:90/h:474/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NjA2/OTQtMTQyNjA3MjAx/OS0xMjg4LmpwZWc.jpeg"
+                                alt="Abacus - Archives 1 (News From The 80ies)"></td>
+                        <td>Abacus - Archives 1 (News From The 80ies)</td>
+                        <td>2014</td>
+                        <td>GTR 144</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/i1c54k1pwkOPe68yFMidPP9_fa-5DPGfMdOXf7ltZEk/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NjA1/ODAtMTYxNjc5NzAw/Ni01ODIzLmpwZWc.jpeg"
+                                alt="Abacus - Midway"></td>
+                        <td>Abacus - Midway</td>
+                        <td>2012</td>
+                        <td>GTR 143</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/0IKqtk83wcRLewzHC28UR8TNTJlBmESxNUNzv9zrLUI/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NjA1/MjUtMTYxNjc5Mzgz/Ni03OTI4LmpwZWc.jpeg"
+                                alt="Abacus - Everything You Need"></td>
+                        <td>Abacus - Everything You Need</td>
+                        <td>2012</td>
+                        <td>GTR 142</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/sFVmu2kp67VlAg3Ny-jK7o1-TbJSBEFSvO5dwwkwTLA/rs:fit/g:sm/q:90/h:582/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMDA1/NjEtMTUyMzI4NzQ1/NS04Nzc0LmpwZWc.jpeg"
+                                alt="Abacus - Abacus"></td>
+                        <td>Abacus - Abacus</td>
+                        <td>2012</td>
+                        <td>GTR 141-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/Qp_M4cps88cNlIfcfmYT97s_nAuzdBHrHQ9pmTss70s/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwOTIw/OTQtMTYxNjc5MDQ1/MC00MzgzLmpwZWc.jpeg"
+                                alt="Abacus - Abacus"></td>
+                        <td>Abacus - Abacus</td>
+                        <td>2012</td>
+                        <td>GTR 141</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/kl7Dv1KH5G3cf2502mOAWBUI_yqzaLpZObqq8wZv0oc/rs:fit/g:sm/q:90/h:299/w:291/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NjIz/MDQtMTM1MDY2MTY1/Mi0zNDI4LmpwZWc.jpeg"
+                                alt="Baumstam-72 - 12 = 40"></td>
+                        <td>Baumstam-72 - 12 = 40</td>
+                        <td>2012</td>
+                        <td>GTR 139-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/qNMwUBw9qp5lJIcOzHldPpMW9sE0cgokJx0RD_j9xmM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NjA2/MDctMTYwMjUzOTMx/MC02MDg1LmpwZWc.jpeg"
+                                alt="Abacus - Just A Day's Journey Away!"></td>
+                        <td>Abacus - Just A Day's Journey Away!</td>
+                        <td>2011</td>
+                        <td>GTR 137</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/_BLU0X0uq8jzaD4WGb2cauof4QOv_VHSXyShZ_D0YKc/rs:fit/g:sm/q:90/h:255/w:255/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMTMx/NTUtMTM5MDI5NjA5/Ny03ODQxLmpwZWc.jpeg"
+                                alt="Light Year - Reveal The Fantastic"></td>
+                        <td>Light Year - Reveal The Fantastic</td>
+                        <td>2011</td>
+                        <td>GTR 135-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/Yc3bmhQ3i0JhJ5D2S8NHLiphx1nxQ2U9t_fDrfK6HuA/rs:fit/g:sm/q:90/h:447/w:499/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MjQx/MTAtMTI5ODE2NTU5/OC5qcGVn.jpeg"
+                                alt="Light Year - Reveal The Fantastic"></td>
+                        <td>Light Year - Reveal The Fantastic</td>
+                        <td>2010</td>
+                        <td>GTR 135</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/2QrEwWepMBAxmBfs6_9TC68TSJlr8Eh9by3g4ga-6Ts/rs:fit/g:sm/q:90/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5NDUy/ODItMTM4MDIwNjM2/Ni02NDczLmpwZWc.jpeg"
+                                alt="Baumstam-On Tour"></td>
+                        <td>Baumstam-On Tour</td>
+                        <td>2009</td>
+                        <td>GTR 127-1</td>
+                        <td>Vinyl</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/e6aD64QYh6rY13R8dVk7oFnKFDCmzseGe8L_cWI5vmo/rs:fit/g:sm/q:90/h:510/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3ODE0/OTAtMTQ2NzAzNDk2/NC04NzkwLmpwZWc.jpeg"
+                                alt="Badge & Company-Badge & Company"></td>
+                        <td>Badge & Company-Badge & Company</td>
+                        <td>2008</td>
+                        <td>GTR 126</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/q4-qJ2JuivpYh_y90wpN3l-XWxN5Q2uoN9UmIMiVeQ4/rs:fit/g:sm/q:90/h:541/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MjY2/MDMtMTY4NTg3NjEz/MC04Njc5LmpwZWc.jpeg"
+                                alt="Bang - Mother / Bow To The King + Death Of A Country"></td>
+                        <td>Bang - Mother / Bow To The King + Death Of A Country</td>
+                        <td>2007</td>
+                        <td>GTR 125</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/aVwDGDCWD2PK4zqAWcT6DXrB0diaw6VTTM87_YulZ-Y/rs:fit/g:sm/q:90/h:534/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MjY2/MzYtMTUzNDg1NjIy/OS03NTMxLmpwZWc.jpeg"
+                                alt="Bang - Bang + Music"></td>
+                        <td>Bang - Bang + Music</td>
+                        <td>2007</td>
+                        <td>GTR 124</td>
+                        <td>CD</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.discogs.com/bd9MuaIhBJ4h9UX1VOjaCpzKFQnx3ZV3LS9JM-nC1so/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MjUy/NDMtMTM0NjU4MzY3/NS04MDEyLmpwZWc.jpeg"
+                                alt="Czesław Niemen-Człowiek Jam Niewdzięczny"></td>
+                        <td>Czesław Niemen-Człowiek Jam Niewdzięczny</td>
+                        <td>2003</td>
+                        <td>GTR 116</td>
+                        <td>CD</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="contact-form" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+                <div class="invalid-feedback">Please provide your name.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Send</button>
+        </form>
+    </section>
+
+
+    <footer class="bg-success text-white text-center py-3 mt-4">
+        <p>&copy; 2024 New Music - Green Tree</p>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function sortTable(columnIndex) {
+        const table = document.getElementById("albumsTable");
+        let switching = true;
+        let shouldSwitch, i;
+        let rows, x, y;
+        let direction = "asc";
+        let switchCount = 0;
+
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+
+            for (i = 1; i < rows.length - 1; i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[columnIndex];
+                y = rows[i + 1].getElementsByTagName("TD")[columnIndex];
+
+                if (direction === "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (direction === "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                switchCount++;
+            } else {
+                if (switchCount === 0 && direction === "asc") {
+                    direction = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
+
+</html>
